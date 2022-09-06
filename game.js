@@ -26,7 +26,7 @@ function win(user_choice, bot_choice) {
     let user_choice_str = choiceToString(user_choice);
     let bot_choice_str = choiceToString(bot_choice);
 
-    status_msg.textContent  = `user drew by using ${user_choice_str} against ${bot_choice_str}`;
+    status_msg.textContent  = `User won by using ${user_choice_str} against ${bot_choice_str}.`;
     
     let button_img = document.getElementById(user_choice_str).getElementsByTagName("img")[0];
     button_img.style.borderColor = "#27eb79";
@@ -37,7 +37,7 @@ function loose(user_choice, bot_choice) {
     let user_choice_str = choiceToString(user_choice);
     let bot_choice_str = choiceToString(bot_choice);
     
-    status_msg.textContent = `user drew by using ${user_choice_str} against ${bot_choice_str}`;
+    status_msg.textContent = `User lost by using ${user_choice_str} against ${bot_choice_str}.`;
 
     let button_img = document.getElementById(user_choice_str).getElementsByTagName("img")[0];
     button_img.style.borderColor = "#c73939";
@@ -48,7 +48,7 @@ function draw(user_choice, bot_choice) {
     let user_choice_str = choiceToString(user_choice);
     let bot_choice_str = choiceToString(bot_choice);
     
-    status_msg.textContent = `user drew by using ${user_choice_str} against ${bot_choice_str}`;
+    status_msg.textContent = `User drew by using ${user_choice_str} against ${bot_choice_str}.`;
     
     let button_img = document.getElementById(user_choice_str).getElementsByTagName("img")[0];
     button_img.style.borderColor = "#181818";
