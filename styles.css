@@ -20,15 +20,20 @@ body {
     background-color: #eff9f8;
 }
 
-.status {
-    padding-top: 25px;
+.result-panel {
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
 }
 
-/*
-border: 5px solid #27eb79;
-border_r1: 5px solid #c73939;
-border_r2: 0 0 10px #d01115;
-*/
+.result-message {
+    padding-top: 25px;
+}
 
 .button-choices {
     padding-top: 20px;
@@ -47,5 +52,5 @@ border_r2: 0 0 10px #d01115;
 
 .choice > img:hover {
     cursor: pointer;
-    border-color: #6d6d6d;
+    border-color: #00a18c;
 }
