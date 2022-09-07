@@ -27,10 +27,6 @@ function showResult(user_choice, bot_choice, result) {
     let user_choice_str = choiceToString(user_choice);
     let bot_choice_str = choiceToString(bot_choice);
 
-    console.log(`user_choice: ${user_choice_str}`);
-    console.log(`user_choice: ${bot_choice_str}`);
-    console.log(`result: ${result}`);
-    
     let result_color = "";
     let result_message = "";
     let status_message = "";
@@ -59,7 +55,6 @@ function showResult(user_choice, bot_choice, result) {
     result_panel_msg.textContent = result_message;
     status_panel_msg.textContent = status_message;
 }
-
 
 function getResult(user_choice, bot_choice) {
     switch (user_choice) {
