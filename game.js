@@ -5,7 +5,6 @@ const WIN = 0;
 const LOOSE = 1;
 const DRAW = 2;
 
-// const result_panel = document.getElementById("result-panel");
 const result_panel_msg = document.getElementById("result-panel-msg"); 
 const status_panel_msg = document.getElementById("status-panel-msg");
 const rock_button = document.getElementById("rock");
@@ -21,14 +20,6 @@ function choiceToString(choice) {
         case ROCK: return "rock (👊)";
         case PAPER: return "paper (📄)";
         case SCISSORS: return "scissors (✂️)";
-    }
-}
-
-function choiceToEmoji(choice) {
-    switch (choice) {
-        case ROCK: return "👊";
-        case PAPER: return "📄";
-        case SCISSORS: return "✂️";
     }
 }
 
@@ -64,7 +55,6 @@ function showResult(user_choice, bot_choice, result) {
             break;
     }
     
-    // result_panel.style.style.borderColor = result_color;
     result_panel_msg.style.color = result_color;
     result_panel_msg.textContent = result_message;
     status_panel_msg.textContent = status_message;
